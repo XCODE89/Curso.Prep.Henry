@@ -92,7 +92,7 @@ function colors(color) {
     case "orange":
       return "This is orange";
     default:
-      retunr "Color not found";
+      return "Color not found";
   }
 }
 
