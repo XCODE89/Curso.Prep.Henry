@@ -175,11 +175,11 @@ function operadoresLogicos(num1, num2, num3) {
   }
     else {
       if (num1>num2 && num1>num3 && num1>0) {
-        return "Numero 1 es mayor y positivo"
+        return "Número 1 es mayor y positivo"
       }
       else {
         if (num3>num1 && num3>num2) {
-          return "num3++"
+          return "num3+1"
         }
         else {
           return false
@@ -201,7 +201,7 @@ function esPrimo(numero) {
       cont++
     }
   }
-  if (cont=2) {
+  if (cont===2) {
     return true
   }
   else {
@@ -237,7 +237,7 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if (numero/100>1 && numero/100<10) {
+  if (numero/100>=1 && numero/100<10) {
     return true
   }
   else {
