@@ -84,19 +84,15 @@ function colors(color) {
   //Usar el statement Switch.
   switch(color) {
     case "blue":
-      console.log("This is blue");
-      break;
+      return "This is blue";
     case "red":
-      console.log("This is red");
-      break;
+      return "This is red";
     case "green":
-      console.log("This is green");
-      break;
+      return "This is green";
     case "orange":
-      console.log("This is orange");
-      break;
+      return "This is orange";
     default:
-      console.log("Color not found")
+      retunr "Color not found";
   }
 }
 
@@ -170,20 +166,20 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
-  if (num1>num2 && num1>num3 && num1>0) {
-    return "Numero 1 es mayor y positivo"
+  if (num1===0 || num2===0 || num3===0) {
+    return "Error"
   }
   else {
     if (num1<0 || num2<0 || num3<0) {
       return "Hay negativos"
   }
     else {
-      if (num3>num1 && num3>num2) {
-        return num3++
+      if (num1>num2 && num1>num3 && num1>0) {
+        return Numero 1 es mayor y positivo
       }
       else {
-        if (num1===0 || num2===0 || num3===0) {
-          return "Error"
+        if (num3>num1 && num3>num2) {
+          return "num3++"
         }
         else {
           return false
@@ -217,11 +213,11 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-if (valor="true") {
+if (valor=== true) {
   return "Soy verdadero"
 }
 else {
-  if (valor="false") {
+  if (valor=== false) {
     return "Soy falso"
   }
 }
@@ -230,10 +226,12 @@ else {
 function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
-  //Escribe tu código aquí   
-  for (i=0;i<=60;i++) {
-    console.log (6*i)
+  //Escribe tu código aquí
+  let arrayTablaDe6 =[]   
+  for (let i=0;i<=10;i++) {
+    arrayTablaDe6.push(6*i)
   }
+  return arrayTablaDe6
 }
 
 function tieneTresDigitos(numero){
@@ -251,7 +249,15 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  while numero
+  var a=numero
+  var i=0
+  do {
+    i=i+1;
+    a=a+5;
+  }
+while (i<8) {
+  return a
+}
 }
 
 
