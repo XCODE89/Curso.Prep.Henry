@@ -30,7 +30,7 @@ function incrementarPorUno(array) {
   for (i=0; i<array.length; i++) {
     otroArray[i]=array[i]+1;
   }
-  return array
+  return otroArray
 }
 
 
@@ -131,7 +131,7 @@ function multiplicarArgumentos() {
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-if (arreglo.lenght>18) {
+if (arreglo.length>18) {
   return arreglo.length
 }
 }
@@ -210,6 +210,7 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  
 }
 
 
